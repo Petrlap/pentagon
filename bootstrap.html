@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .pentagon:hover .pentagon__img {
+        transform-origin: center;
+        transform: scale(1.2);
+        transition: transform 0.4s;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column align-items-center">
+    <button
+      type="button"
+      class="btn btn-outline-primary d-block mt-4 mb-4"
+      onclick="shuffleElements()"
+    >
+      Перетасовать
+    </button>
+    <main class="container-fluid">
+      <div class="row d-flex flex-wrap justify-content-center box">
+        <div
+          class="col-xl-3 col-md-4 col-6 mt-3 mb-3 d-flex align-items-center justify-content-center mt-3 mb-3 d-flex align-items-center justify-content-center pentagon"
+        >
+          <svg
+            width="250"
+            height="250"
+            viewBox="-1 0 101 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <pattern
+                id="imgPattern1"
+                width="350"
+                height="350"
+                patternUnits="userSpaceOnUse"
+              >
+                <image
+                  xlink:href="./img/1.webp"
+                  width="140%"
+                  height="140%"
+                  x="-20%"
+                  y="-20%"
+                  class="pentagon__img"
+                />
+              </pattern>
+            </defs>
+            <path
+              d="M20,0 L80,0 L100,60 L50,100 L0,60z"
+              stroke="black"
+              fill="url(#imgPattern1)"
+            />
+          </svg>
+        </div>
+        <div
+          class="col-xl-3 col-md-4 col-6 mt-3 mb-3 d-flex align-items-center justify-content-center pentagon"
+        >
+          <svg
+            width="250"
+            height="250"
+            viewBox="-1 0 101 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <pattern
+                id="imgPattern2"
+                width="350"
+                height="350"
+                patternUnits="userSpaceOnUse"
+              >
+                <image
+                  xlink:href="./img/2.webp"
+                  width="140%"
+                  height="140%"
+                  x="-20%"
+                  y="-20%"
+                  class="pentagon__img"
+                />
+              </pattern>
+            </defs>
+            <path
+              d="M20,0 L80,0 L100,60 L50,100 L0,60z"
+              stroke="black"
+              fill="url(#imgPattern2)"
+            />
+          </svg>
+        </div>
+        <div
+          class="col-xl-3 col-md-4 col-6 mt-3 mb-3 d-flex align-items-center justify-content-center pentagon"
+        >
+          <svg
+            width="250"
+            height="250"
+            viewBox="-1 0 101 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <pattern
+                id="imgPattern3"
+                width="350"
+                height="350"
+                patternUnits="userSpaceOnUse"
+              >
+                <image
+                  xlink:href="./img/3.webp"
+                  width="140%"
+                  height="140%"
+                  x="-20%"
+                  y="-20%"
+                  class="pentagon__img"
+                />
+              </pattern>
+            </defs>
+            <path
+              d="M20,0 L80,0 L100,60 L50,100 L0,60z"
+              stroke="black"
+              fill="url(#imgPattern3)"
+            />
+          </svg>
+        </div>
+        <div
+          class="col-xl-3 col-md-4 col-6 mt-3 mb-3 d-flex align-items-center justify-content-center pentagon"
+        >
+          <svg
+            width="250"
+            height="250"
+            viewBox="-1 0 101 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <pattern
+                id="imgPattern4"
+                width="350"
+                height="350"
+                patternUnits="userSpaceOnUse"
+              >
+                <image
+                  xlink:href="./img/4.webp"
+                  width="140%"
+                  height="140%"
+                  x="-20%"
+                  y="-20%"
+                  class="pentagon__img"
+                />
+              </pattern>
+            </defs>
+            <path
+              d="M20,0 L80,0 L100,60 L50,100 L0,60z"
+              stroke="black"
+              fill="url(#imgPattern4)"
+            />
+          </svg>
+        </div>
+        <div
+          class="col-xl-3 col-md-4 col-6 mt-3 mb-3 d-flex align-items-center justify-content-center pentagon"
+        >
+          <svg
+            width="250"
+            height="250"
+            viewBox="-1 0 101 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <pattern
+                id="imgPattern5"
+                width="350"
+                height="350"
+                patternUnits="userSpaceOnUse"
+              >
+                <image
+                  xlink:href="./img/5.webp"
+                  width="140%"
+                  height="140%"
+                  x="-20%"
+                  y="-20%"
+                  class="pentagon__img"
+                />
+              </pattern>
+            </defs>
+            <path
+              d="M20,0 L80,0 L100,60 L50,100 L0,60z"
+              stroke="black"
+              fill="url(#imgPattern5)"
+            />
+          </svg>
+        </div>
+        <div
+          class="col-xl-3 col-md-4 col-6 mt-3 mb-3 d-flex align-items-center justify-content-center pentagon"
+        >
+          <svg
+            width="250"
+            height="250"
+            viewBox="-1 0 101 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <pattern
+                id="imgPattern6"
+                width="350"
+                height="350"
+                patternUnits="userSpaceOnUse"
+              >
+                <image
+                  xlink:href="./img/6.webp"
+                  width="140%"
+                  height="140%"
+                  x="-20%"
+                  y="-20%"
+                  class="pentagon__img"
+                />
+              </pattern>
+            </defs>
+            <path
+              d="M20,0 L80,0 L100,60 L50,100 L0,60z"
+              stroke="black"
+              fill="url(#imgPattern6)"
+            />
+          </svg>
+        </div>
+        <div
+          class="col-xl-3 col-md-4 col-6 mt-3 mb-3 d-flex align-items-center justify-content-center pentagon"
+        >
+          <svg
+            width="250"
+            height="250"
+            viewBox="-1 0 101 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <pattern
+                id="imgPattern7"
+                width="350"
+                height="350"
+                patternUnits="userSpaceOnUse"
+              >
+                <image
+                  xlink:href="./img/7.webp"
+                  width="140%"
+                  height="140%"
+                  x="-20%"
+                  y="-20%"
+                  class="pentagon__img"
+                />
+              </pattern>
+            </defs>
+            <path
+              d="M20,0 L80,0 L100,60 L50,100 L0,60z"
+              stroke="black"
+              fill="url(#imgPattern7)"
+            />
+          </svg>
+        </div>
+        <div
+          class="col-xl-3 col-md-4 col-6 mt-3 mb-3 d-flex align-items-center justify-content-center pentagon"
+        >
+          <svg
+            width="250"
+            height="250"
+            viewBox="-1 0 101 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <pattern
+                id="imgPattern8"
+                width="350"
+                height="350"
+                patternUnits="userSpaceOnUse"
+              >
+                <image
+                  xlink:href="./img/8.webp"
+                  width="140%"
+                  height="140%"
+                  x="-20%"
+                  y="-20%"
+                  class="pentagon__img"
+                />
+              </pattern>
+            </defs>
+            <path
+              d="M20,0 L80,0 L100,60 L50,100 L0,60z"
+              stroke="black"
+              fill="url(#imgPattern8)"
+            />
+          </svg>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js" async></script>
+  </body>
+</html>

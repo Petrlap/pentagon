@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100vw;
+  font-family: "Courier New", Courier, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #100720;
+}
+.button {
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  font-size: 17px;
+  color: white;
+  background: #100720;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  transition: 0.1s;
+  margin: 45px;
+}
+.button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 94, 247, 1) 17.8%,
+    rgba(2, 245, 255, 1) 100.2%
+  );
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.button:active {
+  background: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 94, 247, 1) 17.8%,
+    rgba(2, 245, 255, 1) 100.2%
+  );
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pentagon {
+  position: relative;
+  width: calc(25% - 1rem);
+  height: 250px;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.pentagon__svg {
+  position: absolute;
+}
+.pentagon:hover .pentagon__img {
+  transform-origin: center;
+  transform: scale(1.2);
+  transition: transform 0.4s;
+}
+.separator {
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 1600px) {
+  .pentagon {
+    width: calc(25% - 1rem);
+  }
+}
+@media (max-width: 1100px) {
+  .pentagon {
+    width: calc(33.3333% - 1rem);
+  }
+}
+@media (max-width: 720px) {
+  .pentagon {
+    width: calc(50% - 1rem);
+  }
+}
+@media (max-width: 420px) {
+  .pentagon {
+    width: calc(50% - 1rem);
+  }
+}
